@@ -35,14 +35,14 @@ class linkedlist:
       tmp=tmp.ileri
       
   def yazdir(self):
-    tmp=self.bas 
-    if self.bas is None:
-      print("nanay")
-       
-    else:  
-      while tmp is not None:
-        print(tmp.icerik,"-->")
+     tmp=self.ust
+    if self.ust is None:
+      print("boş")
+    else:
+      while(tmp!=None):
+        print(tmp.icerik,"-->",end=" ")
         tmp=tmp.ileri
+      return   
   def basaekle(self,yen):
     yeni=Node(yen) 
     if self.son is None:
